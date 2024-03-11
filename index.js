@@ -61,9 +61,9 @@ inquire
 
         // Choose text color
         {
-            type: "textColorChoice",
-            message: "What color would you like the text to be? Choose color format:",
             type: "list",
+            message: "What color would you like the text to be? Choose color format:",
+            name: "textColorChoice",
             choices: ["color keyword", "hexadecimal"],
         },
 
