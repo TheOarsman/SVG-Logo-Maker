@@ -2,7 +2,9 @@ const inquire = require("inquirer");
 const fs = require("fs");
 const { Shape, Circle, Square, Triangle } = require("./lib/shapes.js");
 
-const shapeChoices = { Circle, Square, Triangle };
+const shapeChoices = ["Circle", "Square", "Triangle"];
+const colorKeyWords = ["Blue", "Green", "Indigo", "Orange", "Red", "Violet", "Yellow"];
+
 
 inquire
     .prompt([
