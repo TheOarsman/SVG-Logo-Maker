@@ -3,16 +3,12 @@
          width="300"
          height="200"
          xmlns="http://www.w3.org/2000/svg">
-         <rect
-         x="50"
-         y="50"
-         width="200"
-         height="200"
-         fill="Orange" />
+         <polygon points="150,20 250,180 50, 180"
+         fill="Green" />
          <text
          x="150"
-         y="150"
-         font-size="60"
+         y="155"
+         font-size="50"
          text-anchor="middle"
-         fill="Green">HUV</text>
+         fill="Orange">HUV</text>
          </svg>
