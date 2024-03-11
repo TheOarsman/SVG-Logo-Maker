@@ -1,6 +1,6 @@
 const inquire = require("inquirer");
 const fs = require("fs");
-const { Shape, Circle, Square, Triangle } = require("./lib/shapes.js");
+const { Circle, Square, Triangle } = require("./lib/shapes.js");
 
 const shapeChoices = ["Circle", "Square", "Triangle"];
 const colorKeyWords = [
@@ -34,9 +34,10 @@ inquire
 
     // Validate shape color
     {
-      type: "input",
+      type: "list",
       name: "shapeColor",
       message: "Enter the color keyword",
+      choices: colorKeyWords,
       when: (answers) => {
         if (answers.shapeColorChoice === "color keyword") {
           return true;
@@ -76,9 +77,10 @@ inquire
 
     // Validate Text color
     {
-      type: "input",
+      type: "list",
       name: "textColor",
       message: "Enter the color keyword",
+      choices: colorKeyWords,
       when: (answers) => {
         if (answers.textColorChoice === "color keyword") {
           return true;
@@ -115,11 +117,23 @@ inquire
   ])
 
   .then((answers) => {
-    const shape = new answers.shape(
+    // Mapping the string shape name to the actual shape class
+    const shapeClassMap = {
+      Circle,
+      Square,
+      Triangle,
+    };
+
+    // Getting the selected shape class
+    const ShapeClass = shapeClassMap[answers.chooseShape];
+
+    // Instantiating the selected shape class
+    const shape = new ShapeClass(
       answers.shapeColor,
       answers.text,
       answers.textColor
     );
+
     const svgContent = shape.render();
     fs.writeFile("Logo.svg", svgContent, (err) =>
       err
