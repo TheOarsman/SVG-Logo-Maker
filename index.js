@@ -109,10 +109,17 @@ inquire
         }
       },
     },
+    // Input text for inside of shape
     {
       type: "input",
       message: "Enter text for logo (no more than 3 characters)",
       name: "text",
+      validate: (input) => {
+        if (input.length > 3) {
+          return "You may not enter more than 3 letters!";
+        }
+        return true;
+      },
     },
   ])
 
