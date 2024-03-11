@@ -4,12 +4,14 @@ const { Circle, Square, Triangle } = require("./lib/shapes.js");
 
 const shapeChoices = ["Circle", "Square", "Triangle"];
 const colorKeyWords = [
+  "Black",
   "Blue",
   "Green",
   "Indigo",
   "Orange",
   "Red",
   "Violet",
+  "White",
   "Yellow",
 ];
 
