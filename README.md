@@ -20,7 +20,7 @@ The application employs Jest for running unit tests to ensure accuracy and relia
 
 ## Table of Contents
 
-- [Weather Dashboard](#weather-dashboard)<br>
+- [SVG Logo Maker](#svg-logo-maker)<br>
 - [Desktop Application](#desktop-application)<br>
 - [Description](#description)<br>
 - [Table of Contents](#tabel-of-contents)<br>
@@ -68,7 +68,7 @@ The application employs Jest for running unit tests to ensure accuracy and relia
 
 ## Installation
 
-git clone https://github.com/yourusername/svg-logo-maker.git
+git clone https://github.com/theoarsman/svg-logo-maker.git
 
 Clone the repository: `cd svg-logo-maker`
 
@@ -188,8 +188,6 @@ To set up the test environment locally, follow these steps:
 ![Test Results](assets/images/tests.png)
 
 This structure provides a clear breakdown of each test along with the test results. Users can quickly understand what each test does and verify the test outcomes.
-
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
 ## Questions/Contact
 
