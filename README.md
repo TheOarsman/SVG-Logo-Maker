@@ -2,15 +2,14 @@
 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-[YouTube: Video Demonstration PLACEHOLDER - CHANGE THIS LINK!!!](https://youtu.be/g7lJFkv_omw)
+[YouTube: SVG Logo Maker - Video Demonstration](https://youtu.be/evxzpTv3JEE)
 
-## Desktop Application
+## Description
 
 ![Circle Logo](lib/examples/circleHUV.png)
 ![Circle Logo](lib/examples/squareHUV.png)
-![Circle Logo](lib/examples/triangleHUV.png)
-
-## Description
+![Circle Logo](lib/examples/triangleHUV.png)<br></br>
+![Terminal Snip](assets/images/terminalSnip.png)
 
 The SVG Logo Maker is a Node.js command-line application built with Object-oriented Programming principles. It allows freelance web developers to create simple logos for their projects without relying on a graphic designer.
 
@@ -21,7 +20,6 @@ The application employs Jest for running unit tests to ensure accuracy and relia
 ## Table of Contents
 
 - [SVG Logo Maker](#svg-logo-maker)<br>
-- [Desktop Application](#desktop-application)<br>
 - [Description](#description)<br>
 - [Table of Contents](#tabel-of-contents)<br>
 - [User Story](#user-story)<br>
